@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        int count=1;
+        for(int i=num; count<=5; i++){
+            boolean isPrime=true;
+            for(int j=2; j<i; j++){
+                if(i%j==0){
+                    isPrime=false;
+                    break;
+                }
+            }
+            if(isPrime){
+                System.out.printf("%d ",i);
+                count++;
+            }
+        }
+    }
+}
