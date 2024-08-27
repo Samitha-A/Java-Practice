@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        int first=0;
+        int second=1;
+        System.out.printf("0 1 ");
+        for(int i=1; i<=num-2; i++){
+            int sum=first+second;
+            System.out.printf("%d ",sum);
+            first=second;
+            second=sum;
+        }
+    }
+}
