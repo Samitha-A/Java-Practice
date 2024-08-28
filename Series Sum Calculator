@@ -1,0 +1,21 @@
+/*3 (Next term)
+4 (Number of terms in series)
+Sample Output 1:
+3 + 33 + 333 + 3333 (The series)
+3702 (sum of the series)
+*/
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        int digits = scanner.nextInt();
+        int sum=0, cnum=0;
+        while(digits!=0){
+            cnum=cnum*10+num;
+            sum=sum+cnum;
+            digits--;
+        }
+        System.out.printf("%d",sum);
+    }
+}
