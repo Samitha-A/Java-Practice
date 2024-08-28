@@ -1,0 +1,26 @@
+?*
+6
+Sample Output 1:
+1 2 3 (positive divisors)
+6 (sum of the divisors)
+6 is an equal number
+*/
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        int sum=0;
+        for(int i=1; i<num; i++){
+            if(num%i==0){
+                sum=sum+i;
+            }
+        }
+        if(sum==num){
+            System.out.printf("%d is an equal number",num);
+        }
+        else{
+            System.out.printf("%d is not an equal number",num);
+        }
+    }
+}
