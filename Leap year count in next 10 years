@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int year = in.nextInt();
+        int decade = year+10;
+        int leap=0, nonleap=0;
+        if(year%400==0 || (year%100!=0 && year%4==0)){
+                System.out.printf("%d is a leap year\n",year);
+            }
+        else
+        System.out.printf("%d is not a leap year\n",year);
+        for(int i=year+1; i<=decade; i++){
+            if(i%400==0 || (i%100!=0 && i%4==0)){
+                leap++;
+            }
+            else
+            nonleap++;
+        }
+        System.out.printf("Leap years: %d\nNon-Leap Years: %d",leap,nonleap);
+    }
+}
