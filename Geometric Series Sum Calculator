@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        double sum = 0.0;
+        double term = 1.0; // The first term of the series
+        for (int i = 0; i < n; i++) {
+            sum += term;   // Add the current term to the sum
+            term /= 2;     // Next term is half of the current term
+        }
+        System.out.printf("\n%.2f",sum);
+    }
+}
