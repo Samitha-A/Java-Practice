@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        String n = in.next();
+        int len = n.length();
+        System.out.printf("%c",n.charAt(len-1));
+        for(int i=1; i<len-1; i++){
+            System.out.printf("%c",n.charAt(i));
+        }
+        System.out.printf("%c",n.charAt(0));
+    }
+}
