@@ -18,6 +18,7 @@ class Solution {
     }
 }
 
+
 /* The condition 4 * number < answer is used to check whether the current numeral represents a subtractive case.
 If the value of the current numeral number is smaller than a quarter of the current answer, then this indicates a subtractive case (e.g., I before V or X before L).
 In such cases, the value number should be subtracted from the answer, because the current numeral is being used to subtract from the next larger numeral.*/
